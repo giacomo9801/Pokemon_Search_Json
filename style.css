@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    background: #da471b;
+    font-family: 'Raleway', sans-serif;
+    color: rgb(73, 73, 73);
+}
+
+.container {
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.container2 {
+    display: flex;
+    align-items: center;
+    
+    
+  }
+
+  .text {
+    flex: 1;
+    padding: 20px;
+  }
+
+  .image {
+    height: 40px;
+    width: 40px;
+    margin-left: 20px; /* Aggiungi margine a sinistra per separare l'immagine dal testo */
+    rotate: 30deg;
+    /* fai ruotare l'immagine all infinito */
+    animation: rotate 2s linear infinite;
+    
+  }
+
+  #selectedPokemonList{
+    color: white;
+    
+  }
+
+input#searchBar {
+    color: inherit;
+    padding: 12px 10px;
+    width: 60vw;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    border: none;
+    outline: none;
+}
+#pokeball{
+    height: 20px;
+    width: 20px;
+
+}
+
+ul {        
+    background: #fff;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    height: 0;
+    overflow: hidden;  
+    box-shadow: 1px 2px 5px rgba(0,0,0,0.2);
+    transition: .4s height;
+}
+
+ul li {
+    font-size: 13px;
+    padding: 10px 10px;
+    list-style: none;
+    border-top: 1px solid #ddd;
+}
+
+.match {
+    font-weight: 600;
+    color: black;
+    background-color: yellow;
+}
+
+@media only screen and (min-width: 600px) {
+  input#searchBar {
+    width: 40vw;
+  }
+}
